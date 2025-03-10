@@ -1,0 +1,18 @@
+.WhyUs{
+	background-color: rgba(40, 48, 61, 1) ;
+	padding: 20px;
+}
+
+.WhyUs h1{
+text-align: center;
+margin-bottom: 20px;
+color: #fff;
+
+}
+
+@media(max-width: 600px){
+	.WhyUs h1{
+		font-size: 20px;
+	}
+
+}

@@ -1,0 +1,35 @@
+.numbers {
+	background: #e6f6f2;
+	padding: 50px 20px;
+	text-align: center;
+  }
+  
+  .numbers h2 {
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 30px;
+  }
+  
+  .numbers-container {
+	display: flex;
+	justify-content: center;
+	gap: 50px;
+	flex-wrap: wrap;
+  }
+  
+  .number-item {
+	max-width: 220px;
+  }
+  
+  .number-item strong {
+	font-size: 22px;
+	font-weight: bold;
+	display: block;
+  }
+  
+  .number-item p {
+	font-size: 16px;
+	margin-top: 5px;
+	color: #333;
+  }
+  

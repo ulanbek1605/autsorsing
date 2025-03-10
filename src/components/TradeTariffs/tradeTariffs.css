@@ -1,0 +1,76 @@
+.trade-tariffs-container {
+	padding: 50px;
+	background: #f0f4f8;
+	font-family: Arial, sans-serif;
+	text-align: center;
+	/* max-width: 1200px;
+	margin: 0 auto; */
+}
+
+.trade-tariffs-header {
+	font-size: 32px;
+	color: #2c3e50;
+	margin-bottom: 40px;
+}
+
+.tariffs-grid {
+	display: flex;
+	justify-content: space-evenly;
+	gap: 20px;
+	flex-wrap: wrap;
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.tariff-card {
+	background: #ffffff;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+	width: 300px;
+	transition: transform 0.3s ease;
+}
+
+.tariff-card:hover {
+	transform: translateY(-10px);
+}
+
+.tariff-title {
+	font-size: 24px;
+	color: #34495e;
+	margin-bottom: 20px;
+}
+
+.tariff-features {
+	list-style: none;
+	padding: 0;
+	text-align: left;
+}
+
+.tariff-features li {
+	font-size: 16px;
+	color: #555;
+	padding: 10px 0;
+	border-bottom: 1px solid #eee;
+}
+
+.tariff-features li:last-child {
+	border-bottom: none;
+}
+
+
+@media(max-width: 500px){
+	.trade-tariffs-container {
+		padding: 20px;
+	}
+
+	.trade-tariffs-header {
+		font-size: 24px;
+		margin-bottom: 30px;
+	}
+	.tariff-title {
+		font-size: 20px;
+		margin-bottom: 20px;
+	}
+}
