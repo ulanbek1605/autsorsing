@@ -1,13 +1,15 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import "./header.css";
 import { usePathname } from "next/navigation";
 
 export default function Header() {
+	const headerRef = useRef<null | HTMLElement>(null)
 	const [isOpen, setIsOpen] = useState(false);
 	const [scrolled, setScrolled] = useState(false);
-	const pathName = usePathname()
+	const pathName = usePathname();
+
 	useEffect(() => {
 		const handleScroll = () => {
 			setScrolled(window.scrollY > 20);
@@ -16,9 +18,29 @@ export default function Header() {
 		return () => window.removeEventListener("scroll", handleScroll);
 	}, []);
 
+	const toggleMenu = () => {
+		setIsOpen(!isOpen);
+	};
+
+	useEffect(() => {
+		if (!headerRef.current || !isOpen) return
+		const hanldeClick = (e: MouseEvent): void => {
+			const target = e.target as HTMLDivElement
+			if (!headerRef.current?.contains(target)) {
+				setIsOpen(prev => !prev)
+			}
+		}
+		document.addEventListener('click', hanldeClick)
+		return () => {
+			document.removeEventListener('click', hanldeClick)
+		}
+	}, [isOpen])
+
+
+
 	return (
 		<>
-			<header className={`header ${scrolled ? "scrolled" : ""}`}>
+			<header ref={headerRef} className={`header ${scrolled ? "scrolled" : ""}`}>
 				<div className="container">
 					<div className="logo">Чериков и партнеры</div>
 					<nav className={`nav ${isOpen ? "open" : ""}`}>
@@ -37,7 +59,7 @@ export default function Header() {
 					</nav>
 					<button
 						className={`burger ${isOpen ? "open" : ""}`}
-						onClick={() => setIsOpen(!isOpen)}
+						onClick={toggleMenu}
 					>
 						<span></span>
 						<span></span>
