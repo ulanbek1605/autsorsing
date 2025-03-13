@@ -3,7 +3,7 @@ import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import "./header.css";
 import { usePathname } from "next/navigation";
-
+import Image from "next/image";
 export default function Header() {
 	const headerRef = useRef<null | HTMLElement>(null)
 	const [isOpen, setIsOpen] = useState(false);
@@ -42,7 +42,14 @@ export default function Header() {
 		<>
 			<header ref={headerRef} className={`header ${scrolled ? "scrolled" : ""}`}>
 				<div className="container">
-					<div className="logo">Чериков и партнеры</div>
+					<div className="logo">
+						<Image
+							src="/images/logo.png"
+							width={40}
+							height={40}
+							alt="Picture of the author"
+						/>
+					</div>
 					<nav className={`nav ${isOpen ? "open" : ""}`}>
 						<Link href="/" className={pathName === '/' ? 'active' : ''} onClick={() => setIsOpen(false)}>
 							Главная

@@ -10,24 +10,30 @@ const Contacts = () => {
       <div className="contacts-content">
         <div className="contacts-info">
           <p>
-            <strong>📍 Адрес:</strong> ул. Мусой Бакской, Ул. Хрущебова, Баталья
+            <strong>📍 Адрес:</strong>ТК Келечек б/н г. Кызыл-Кыя ул. 60 лет Кыргызской ССР
           </p>
           <p>
             <strong>📞 Телефон:</strong>{' '}
-            <a href="tel:+996551181888" className="contact-link">
-              +996 551 181 888
+            <a href="tel:+996227616767" className="contact-link">
+              +996 227 616 767
+            </a>
+          </p>
+          <p>
+            <strong>📞 Телефон:</strong>{' '}
+            <a href="tel:+996553616767" className="contact-link">
+              +996 553 616 767
             </a>
           </p>
           <p>
             <strong>✉️ Email:</strong>{' '}
-            <a href="mailto:example@gmail.com" className="contact-link">
-              example@gmail.com
+            <a href="mailto:u.bukh@mail.ru" className="contact-link">
+              u.bukh@mail.ru
             </a>
           </p>
         </div>
         <div className="map-container">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3031.927842704981!2d72.7911988!3d40.543183299999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38bdabf76c64ebd9%3A0x6af14b6e3e0e9637!2zMzE2INCj0LvQuNGG0LAg0JvQtdC90LjQvdCwLCDQntGI!5e0!3m2!1sru!2skg!4v1741413042503!5m2!1sru!2skg"
+            src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d6088.655506366779!2d72.1327653773183!3d40.268469019050414!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDDCsDE2JzA2LjUiTiA3MsKwMDcnNTguMCJF!5e0!3m2!1sru!2skg!4v1741848976276!5m2!1sru!2skg"
             allowFullScreen
             loading="lazy"
             className="map-contact"

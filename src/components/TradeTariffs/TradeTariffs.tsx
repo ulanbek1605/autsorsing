@@ -9,7 +9,7 @@ const TradeTariffs = () => {
         <div className="tariff-card">
           <h2 className="tariff-title">ТАРИФ  &quot;НУЛЕВОЙ&quot;</h2>
           <ul className="tariff-features">
-            <li>7900 сом</li>
+            <li>1000 сом</li>
             <li>нет деятельности</li>
             <li>нет сотрудников</li>
             <li>1 час консультаций</li>
@@ -20,7 +20,7 @@ const TradeTariffs = () => {
         <div className="tariff-card">
           <h2 className="tariff-title">ТАРИФ  &quot;БАЗОВЫЙ &quot;</h2>
           <ul className="tariff-features">
-            <li>22 900 сом</li>
+            <li>5000 сом</li>
             <li>до 5 сделок в месяц</li>
             <li>до 5 сотрудников</li>
             <li>5 часов консультаций</li>
@@ -33,7 +33,7 @@ const TradeTariffs = () => {
         <div className="tariff-card">
           <h2 className="tariff-title">ТАРИФ  &quot;ПРЕМИУМ &quot;</h2>
           <ul className="tariff-features">
-            <li>44 900 сом</li>
+            <li>15000 сом</li>
             <li>до 15 сделок в месяц</li>
             <li>до 15 сотрудников</li>
             <li>неограниченные консультации</li>

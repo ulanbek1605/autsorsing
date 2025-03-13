@@ -1,4 +1,3 @@
-import About from "@/components/About/About";
 import CallToAction from "@/components/CallToAction/CallToAction";
 import Main from "@/components/Main/Main";
 import Numbers from "@/components/Numbers/Numbers";
@@ -9,7 +8,7 @@ export default function Home() {
     <div className=''>
       <Main />
       <Numbers />
-      <About />
+      {/* <About /> */}
       <WhyUsPage />
       <CallToAction text="ПЕРЕЙДЕМ К НАШИМ ТАРИФАМ?" href="/tariffs" />
     </div>

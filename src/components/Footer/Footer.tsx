@@ -6,12 +6,12 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-contact">
-        <div>+996 551 986867</div> <br />
-        <div>+996 700 986867</div> <br />
-        <div>info@cherikov.kg</div>
+        <div>+996 227 616767</div> <br />
+        <div>+996 553 616767</div> <br />
+        <div>u.bukh@mail.ru</div>
       </div>
       <div className="footer-address">
-        Кыргызская Республика, г. Бишкек, бул. Эркиндик, 64Б, офис 22
+        ТК Келечек б/н г. Кызыл-Кыя ул. 60 лет Кыргызской ССР
       </div>
     </footer>
   );
