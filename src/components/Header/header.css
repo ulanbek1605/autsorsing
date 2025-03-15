@@ -23,11 +23,23 @@
 }
 
 .logo {
-	font-size: 24px;
-	font-weight: bold;
-	color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    display: flex;
+    gap: 8px;
+    align-items: center; /* Добавлено для вертикального выравнивания элементов */
 }
 
+.logoInfo .logoName {
+    font-size: 18px;
+	letter-spacing: 2.5px;
+}
+
+.logoInfo .logoTitle {
+    font-size: 11px;
+	color: red;
+}
 .nav {
 	display: flex;
 	gap: 20px;

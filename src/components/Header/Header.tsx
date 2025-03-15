@@ -49,6 +49,10 @@ export default function Header() {
 							height={40}
 							alt="Picture of the author"
 						/>
+						<div className="logoInfo">
+							<p className="logoName">S.ABDULLAEV</p>
+							<p className="logoTitle">ACCOUNTING OUTSOURCER</p>
+						</div>
 					</div>
 					<nav className={`nav ${isOpen ? "open" : ""}`}>
 						<Link href="/" className={pathName === '/' ? 'active' : ''} onClick={() => setIsOpen(false)}>
