@@ -6,7 +6,7 @@ const TradeTariffs = () => {
     <div className="trade-tariffs-container">
       <h1 className="trade-tariffs-header">ДЛЯ ТОРГОВЛИ</h1>
       <div className="tariffs-grid">
-        <div className="tariff-card">
+        {/* <div className="tariff-card">
           <h2 className="tariff-title">ТАРИФ  &quot;НУЛЕВОЙ&quot;</h2>
           <ul className="tariff-features">
             <li>1000 сом</li>
@@ -16,7 +16,7 @@ const TradeTariffs = () => {
             <li>сдача отчетности</li>
             <li>прохождение проверок</li>
           </ul>
-        </div>
+        </div> */}
         <div className="tariff-card">
           <h2 className="tariff-title">ТАРИФ  &quot;БАЗОВЫЙ &quot;</h2>
           <ul className="tariff-features">
@@ -25,7 +25,7 @@ const TradeTariffs = () => {
             <li>до 5 сотрудников</li>
             <li>5 часов консультаций</li>
             <li>сдача отчетности</li>
-            <li>прохождение проверок</li>
+            {/* <li>прохождение проверок</li> */}
             <li>+ расчет налогов и Соцфонда</li>
             <li>подготовка счетов</li>
           </ul>

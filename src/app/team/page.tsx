@@ -1,5 +1,5 @@
 import CallToAction from '@/components/CallToAction/CallToAction'
-import Reviews from '@/components/Reviews/Reviews'
+// import Reviews from '@/components/Reviews/Reviews'
 import Services from '@/components/Services/Services'
 import Team from '@/components/Team/Team'
 import React from 'react'
@@ -9,7 +9,7 @@ function page() {
 		<div>
 			<Team />
 			<Services />
-			<Reviews />
+			{/* <Reviews /> */}
 			<CallToAction text='ХОТИТЕ УЗНАТЬ, ГДЕ МЫ НАХОДИМСЯ?' href='/contacts' />
 		</div>
 	)
